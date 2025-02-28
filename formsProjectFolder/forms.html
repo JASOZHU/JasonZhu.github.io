@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html>
+    <head> 
+        <title> weight conversion</title> 
+        <style>  
+            .backImage{ 
+                background-image: url("scale.jpg"); 
+                min-height:500px; 
+                background-position:center; 
+                background-repeat:no-repeat; 
+                background-size:cover; 
+                position:relative;
+            } 
+            .button{ 
+                border:none; 
+                color:white; 
+                padding: 15px 32px; 
+                text-align:center;  
+                text-decoration:none; 
+                display:inline-block; 
+                font-size:16px; 
+                margin:4px 2px; 
+                cursor:pointer;
+
+
+            }  
+            .text {
+            padding: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+            .button1 {background-color:rgb(12, 12, 12)} 
+
+        </style>
+    </head> 
+    <body>  
+        <h2>Content Form Project</h2> 
+        <div class="backImage"> 
+            <div class="text"> 
+                Convert pounds to grams<br>
+            <label> Enter Pounds:</label><br> 
+            <input type="number" id="pounds" placeholder="enter weight in pounds" name="Pounds"required>  
+            <button onClick ="convertPounds()"> apply conversion</button><br>  
+            Pounds= <span id="convertPounds"></span> <br><br>
+
+            Convert Grams to Pounds<br> 
+            <label> Enter grams:</label> 
+            <input type="number" id="grams" placeholder="enter weight in grams" required>
+            <button onclick="convertGrams()"> apply conversion</button><br> 
+            Grams=<span id="convertGrams"></span>
+
+
+            
+            </div>
+    </div>  
+    <script src="button.js">
+    </script> 
+        
+
+    </body>
+</html>
