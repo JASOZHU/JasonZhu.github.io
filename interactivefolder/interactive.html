@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        Interactive canvas 
+        <style> 
+            
+        </style>
+    </head> 
+    <body> 
+        <canvas id="myCanvas" width="800" height ="600" style="border:2px solid #000000;"></canvas>
+        <form> 
+            <input type="radio" id="water" onclick="drawBackground()"> 
+            <label for="water"> water</label> 
+
+            <input type="radio" id="sky" onclick="drawBackground2()"> 
+            <label for="water"> sky</label> 
+
+            <input type="radio" id="rock" onclick="drawBackground3()"> 
+            <label for="water"> rock</label>
+        </form>  
+        <form> 
+            <input type="checkbox" id="lightbulb" onclick="click_function()"> 
+            <label for="lightbulb"> Lightbulb</label>  
+
+            <input type="checkbox" id="fish" onclick="click_function2()"> 
+            <label for="lightbulb"> fish</label> 
+
+            <input type="checkbox" id="lava" onclick="click_function3()"> 
+            <label for="lightbulb"> lava</label>
+
+        </form> 
+        <button onClick="playSound('alien.mp3')"> Sound 1</button> 
+        <button onClick="playSound('car horn.mp3')"> Sound 2</button> 
+        <button onClick="playSound('censor.mp3')"> Sound 3</button>   
+
+        <br> 
+        <br> 
+        <div class="slidecontainer">
+        <input type="range" min="0" max="800" value="0" class="slider" id="slider">   
+        <p>Value: <span id="demo"></span></p>
+        </div>
+        
+        <script src="interactive.js"> 
+            
+        </script> 
+    </body>
+</html>
