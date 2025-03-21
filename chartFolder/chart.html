@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+    <h> 
+        Data Visualization 
+    </h> 
+    <body>  
+        <div> 
+            <!--alter canvas-->
+            <canvas id="barChart"></canvas> 
+            <canvas id="circleChart"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script> 
+            //make some way to fit 2 charts in here
+            const ctx = document.getElementById('barChart'); 
+            const ctx2= document.getElementById("circleChart");
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Pink', 'Black'],
+                datasets: [{
+                  label: '# of Favorite Color Votes',
+                  data: [10, 5, 3, 5, 0, 7],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            }); 
+
+            new Chart(ctx2,{ 
+                type:'doughnut', 
+                data: { 
+                    labels: ['basketball','football','soccer','tennis','hockey'], 
+                    datasets:[{ 
+                        label:'hours spent playing sport', 
+                        data:[5,2,1,5,0], 
+                    }]
+                }
+            });
+          </script>
+    </body>
+</html>
