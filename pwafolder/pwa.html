@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Cycle PWA</title>
+    <meta name="theme-color" content="#317EFB"/>
+    <link rel="manifest" href="pwa.json">
+    <link rel="stylesheet" href="pwa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Water Cycle</h1>
+        <img src="picture.avif" alt="Water Cycle Diagram" class="cycle-image">
+        
+        <div class="button-grid">
+            <button class="stage-btn" data-stage="evaporation">Evaporation</button>
+            <button class="stage-btn" data-stage="condensation">Condensation</button>
+            <button class="stage-btn" data-stage="precipitation">Precipitation</button>
+            <button class="stage-btn" data-stage="collection">Collection</button>
+        </div>
+        
+        <div id="stage-info" class="stage-info">
+            <p>Click on any stage to learn more</p>
+        </div>
+        
+        <button id="installBtn" class="install-btn">Install App</button>
+    </div>
+
+    <script src="pwa.js"></script>
+</body>
+</html>
